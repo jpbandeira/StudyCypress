@@ -1,0 +1,21 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Projeto para criação de testes automatizados.",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome --no-exit",
+    "steps": "./node_modules/.bin/cucumber-js cypress/integration/features"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/steps",
+    "nonGlobalStepDefinitions": false
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^7.0.0-rc.0",
+    "cypress": "^6.3.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  }
+}
